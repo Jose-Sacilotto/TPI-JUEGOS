@@ -1,14 +1,14 @@
 import random
-def generar_matriz(filas, columnas):
+def generarmatriz(filas, columnas):
     return [[random.randint(1, 10) for _ in range(columnas)] for _ in range(filas)]
-def imprimir_matriz(matriz):
+def imprimirmatriz(matriz):
     for fila in matriz:
         print(" ".join(map(str, fila)))
-def juego_suma_matriz():
+def juegosumamatriz():
     filas = 3
     columnas = 3
-    matriz = generar_matriz(filas, columnas)
-    imprimir_matriz(matriz)
+    matriz = generarmatriz(filas, columnas)
+    imprimirmatriz(matriz)
     suma = 0
     for fila in matriz:
         for valor in fila:
@@ -18,4 +18,4 @@ def juego_suma_matriz():
         print("¡Correcto!")
     else:
         print(f"¡Incorrecto! La suma correcta es {suma}. El juego ha terminado.")
-juego_suma_matriz()
+juegosumamatriz()
