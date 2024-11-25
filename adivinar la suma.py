@@ -17,5 +17,5 @@ def juego_suma_matriz():
     if intento == suma:
         print("¡Correcto!")
     else:
-        print(f"¡Incorrecto! La suma correcta es {suma}.")
-        juego_suma_matriz()
+        print(f"¡Incorrecto! La suma correcta es {suma}. El juego ha terminado.")
+juego_suma_matriz()
