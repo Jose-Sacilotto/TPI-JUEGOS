@@ -32,7 +32,6 @@ for i in range(filas):
 
 revelado = [[False for _ in range(columnas)] for _ in range(filas)]
 
-# Jugar
 while True:
     try:
         fila, columna = map(int, input("Introduce fila y columna (separados por espacio): ").split())
